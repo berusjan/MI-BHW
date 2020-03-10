@@ -1,0 +1,41 @@
+
+X:\BHW\sicak-1.2-win-x86_amd64-bundle\sicak-1.2-win-x86_amd64-bundle>
+X:\BHW\sicak-1.2-win-x86_amd64-bundle\sicak-1.2-win-x86_amd64-bundle>
+X:\BHW\sicak-1.2-win-x86_amd64-bundle\sicak-1.2-win-x86_amd64-bundle>meas.exe -M random128apdu -O keysight3000 -R USBInstrument3 -D 1 -C smartcard -n 200 --param="ch=2;cla=80;ins=60"
+SICAK MEASurements 1.0
+* 25.02.2020 15:42:45 Starting...
+* Measurement scenario module loaded: 'AES-128 random (APDU oriented)'
+* Oscilloscope module loaded: 'Keysight 3000 series oscilloscope (formerly Agilent)'
+* Oscilloscope successfully opened: 'USBInstrument3'
+* No oscilloscope configuration file found.
+* Character device module loaded: 'Win32 SmartCard'
+* No character device configuration file found, using default settings.
+* Character device successfully opened: '1'
+* Character device timeout set: '5000ms'
+* Launching 200 measurements...
+Downloading power traces from channel 2
+Using APDU with CLA=0x80 and INS=0x60
+100% done... 2m, 34s elapsed.
+Measured 200 power traces, 560001 samples per trace, and saved them to 'random-traces-250220-154245.bin'.
+Used plaintext blocks were saved to 'plaintext-250220-154245.bin', retrieved ciphertext blocks were saved to 'ciphertext-250220-154245.bin'.
+* 25.02.2020 15:45:20 Finished.
+
+X:\BHW\sicak-1.2-win-x86_amd64-bundle\sicak-1.2-win-x86_amd64-bundle>
+
+
+
+FROMAT DAT TRACES
+singned short int16 - format dat
+
+
+
+VYREZ GERAFU
+zacatek ustrihnout od oka podle grafu 
+	- cca 15 000
+	- presne 15 700
+jedna runda by mela byt - (cele-start-konec)/10rund
+	- (560 000-15 000-20 000)/10 = 52 500
+	- (560 000-15 700-20 000)/10 = 52 430
+tisknou mam tedy od start do 1.runda + jistota
+	- 15 000 - 80 000
+	- 15 700 - 80 000
